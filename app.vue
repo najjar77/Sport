@@ -6,7 +6,7 @@
 
 <template>
   <div>
-    <button @click="message++">Click me</button>
+    <button @click="message++">fix me</button>
     <button @click="bobo"> Yooo</button>
     <h1>{{message}}</h1>
   </div>
