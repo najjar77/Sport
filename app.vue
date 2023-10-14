@@ -1,22 +1,7 @@
-<script setup lang="ts">
- let message = ref<number >(420)
-  let bobo= ref< number> (665);
-</script>
-
-
 <template>
   <div>
-    <button @click="message++">fix me</button>
-    <button @click="bobo"> Yooo</button>
-    <h1>{{message}}</h1>
+    <nuxtLayout>
+      <NuxtPage/>
+    </nuxtLayout>
   </div>
 </template>
-
-
-<style>
-.bobo{
-  background: aqua;
-}
-
-
-</style>
