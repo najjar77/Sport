@@ -2,9 +2,7 @@
 export default defineNuxtConfig({
   app:{
     buildAssetsDir: 'dist',
+    baseURL: '/Sport/'
   },
   devtools: { enabled: true },
-  router:{
-    base: '/Sport/'
-  }
 })
