@@ -1,5 +1,5 @@
 <script setup lang="ts">
- let message = ref<number >(2)
+ let message = ref<number >(420)
   let bobo= ref< number> (665);
 </script>
 
