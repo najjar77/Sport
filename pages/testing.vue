@@ -18,7 +18,7 @@
 
     <v-divider></v-divider>
 
-    <v-list density="comfortable" nav>
+    <v-list density="comfortable" nav="true">
       <v-list-item prepend-icon="mdi-home" title="Home" value="Nav_Home"/>
       <v-list-item prepend-icon="mdi-widgets" title="Galerie" value="Nav_Gallery"/>
       <v-list-item prepend-icon="mdi-account" title="Konto" subtitle="Einstellungen" value="Nav_Account"/>
