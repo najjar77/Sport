@@ -2,6 +2,8 @@
   <div>
     <nuxtLayout>
       <v-app>
+        <!--SIDEBAR -->
+
         <NuxtPage/>
       </v-app>
     </nuxtLayout>
