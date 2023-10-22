@@ -21,7 +21,7 @@
     <v-list density="comfortable" nav="true">
       <v-list-item prepend-icon="mdi-home" title="Home" value="Nav_Home"/>
       <v-list-item prepend-icon="mdi-widgets" title="Galerie" value="Nav_Gallery"/>
-      <v-list-item prepend-icon="mdi-account" title="Konto" subtitle="Einstellungen" value="Nav_Account"/>
+      <v-list-item prepend-icon="mdi-account" title="Konto" value="Nav_Account"/>
       <v-list-item prepend-icon="mdi-wrench" title="Einstellungen" value="Nav_Settings"/>
       <v-divider/>
 
