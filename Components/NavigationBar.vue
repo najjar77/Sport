@@ -25,7 +25,11 @@
       <v-list-item prepend-icon="mdi-wrench" title="Einstellungen" value="Nav_Settings"/>
       <v-divider/>
 
-      <v-list-item prepend-icon="mdi-shield-account" title="Admin" value="Nav_AdminAccount"/>
+      <v-list-item prepend-icon="mdi-shield-account" title="Admin" value="Nav_AdminAccount">
+        <nuxt-link to="/galary">asd</nuxt-link>
+      </v-list-item>
+
+
 
     </v-list>
 
