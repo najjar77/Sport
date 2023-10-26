@@ -19,6 +19,7 @@ export default defineComponent({
           <NavigationBar/>
           <!-- Main Source-->
           <starting-columns/>
+          <v-card> Hello from App</v-card>
         <NuxtPage/>
       </v-app>
     </nuxtLayout>
