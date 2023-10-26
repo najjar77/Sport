@@ -1,1 +1,0 @@
-import{d as e,r as n,q as t,m as a}from"./entry.36d7c299.js";const c=e({__name:"index",setup(r){return n(0),(o,s)=>(a(),t("h1",null,"this will be a login page in the future"))}});export{c as default};
