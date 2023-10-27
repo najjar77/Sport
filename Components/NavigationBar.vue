@@ -1,40 +1,42 @@
 <script setup lang="ts">
 //import Icon from '@mdi/react';
 //import { mdiShieldAccount } from '@mdi/js';
+const navigate = async (path: string) => {
+  await navigateTo(path)
+}
 
 </script>
 
 <template>
 
-  <v-navigation-drawer
+  <VNavigationDrawer
       expand-on-hover
       rail="true"
   >
-    <v-list-item
+    <VListItem
         prepend-avatar="https://randomuser.me/api/portraits/men/85.jpg"
         title="Amiin || Soufian"
         subtitle="Email@"
-    ></v-list-item>
+    ></VListItem>
 
-    <v-divider></v-divider>
+    <VDivider></VDivider>
 
-    <v-list density="comfortable" nav="true">
-      <v-list-item prepend-icon="mdi-home" title="Home" value="Nav_Home"/>
-      <v-list-item prepend-icon="mdi-widgets" title="Galerie" value="Nav_Gallery"/>
-      <v-list-item prepend-icon="mdi-account" title="Konto" value="Nav_Account"/>
-      <v-list-item prepend-icon="mdi-wrench" title="Einstellungen" value="Nav_Settings"/>
-      <v-divider/>
+    <VList density="comfortable" :nav="true">
+      <VListItem @click="navigate('/')" prepend-icon="mdi-home" title="Home" value="Nav_Home"/>
+      <VListItem @click="navigate('/galary')" prepend-icon="mdi-widgets" title="Galerie" value="Nav_Gallery"/>
+      <VListItem @click="navigate('/account')" prepend-icon="mdi-account" title="Konto" value="Nav_Account"/>
+      <VListItem @click="navigate('/settings')" prepend-icon="mdi-wrench" title="Einstellungen" value="Nav_Settings"/>
+      <VDivider/>
 
-      <v-list-item prepend-icon="mdi-shield-account" title="Admin" value="Nav_AdminAccount">
-        <nuxt-link to="/galary">asd</nuxt-link>
-      </v-list-item>
-
+      <VListItem @click="navigate('/admin')" prepend-icon="mdi-shield-account" title="Admin" value="Nav_AdminAccount">
+      </VListItem>
 
 
-    </v-list>
+
+    </VList>
 
 
-  </v-navigation-drawer>
+  </VNavigationDrawer>
 
 </template>
 

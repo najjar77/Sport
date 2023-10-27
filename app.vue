@@ -1,5 +1,4 @@
 <script>
-import testing from '/Components/NavigationBar.vue';
 import {defineComponent} from "vue";
 import NavigationBar from "~/Components/NavigationBar.vue";
 import StartingColumns from "~/Components/StartingColumns.vue";
