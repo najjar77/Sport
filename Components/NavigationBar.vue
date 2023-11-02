@@ -11,7 +11,9 @@ const navigate = async (path: string) => {
 
   <VNavigationDrawer
       expand-on-hover
-      rail="true"
+      :rail="true"
+      permanent
+
   >
     <VListItem
         prepend-avatar="https://randomuser.me/api/portraits/men/85.jpg"
@@ -21,13 +23,12 @@ const navigate = async (path: string) => {
 
     <VDivider></VDivider>
 
-    <VList density="comfortable" :nav="true">
+    <VList density="comfortable" >
       <VListItem @click="navigate('/')" prepend-icon="mdi-home" title="Home" value="Nav_Home"/>
-      <VListItem @click="navigate('/galary')" prepend-icon="mdi-widgets" title="Galerie" value="Nav_Gallery"/>
+      <VListItem @click="navigate('/gallery')" prepend-icon="mdi-widgets" title="Galerie" value="Nav_Gallery"/>
       <VListItem @click="navigate('/account')" prepend-icon="mdi-account" title="Konto" value="Nav_Account"/>
       <VListItem @click="navigate('/settings')" prepend-icon="mdi-wrench" title="Einstellungen" value="Nav_Settings"/>
       <VDivider/>
-
       <VListItem @click="navigate('/admin')" prepend-icon="mdi-shield-account" title="Admin" value="Nav_AdminAccount">
       </VListItem>
 

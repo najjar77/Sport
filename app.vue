@@ -15,10 +15,9 @@ export default defineComponent({
     <nuxtLayout>
       <v-app>
         <!--SIDEBAR -->
-          <NavigationBar/>
-          <!-- Main Source-->
-          <starting-columns/>
-          <v-card> Hello from App</v-card>
+        <NavigationBar/>
+        <!-- Main Source  -->
+
         <NuxtPage/>
       </v-app>
     </nuxtLayout>
