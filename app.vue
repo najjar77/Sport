@@ -13,7 +13,7 @@ export default defineComponent({
 <template>
   <div>
     <nuxtLayout>
-      <v-app>
+      <v-app class="MainBgColor">
         <!--SIDEBAR -->
         <NavigationBar/>
         <!-- Main Source  -->
@@ -23,3 +23,11 @@ export default defineComponent({
     </nuxtLayout>
   </div>
 </template>
+
+<style scoped>
+
+.MainBgColor{
+  background-color: #4E878C ;
+}
+
+</style>
