@@ -10,6 +10,7 @@ const navigate = async (path: string) => {
 <template>
 
   <VNavigationDrawer
+      class="NavigationBarStyle"
       expand-on-hover
       :rail="true"
       permanent
@@ -42,6 +43,10 @@ const navigate = async (path: string) => {
 </template>
 
 <style scoped>
+
+.NavigationBarStyle{
+  background-color: #8ECAE6;
+}
 
 </style>
 

@@ -33,7 +33,7 @@ export default defineComponent({
 <style scoped>
 
 .MainBgColor {
-  background-color: #4E878C;
+  background-color: #bbdefb;
 }
 
 </style>

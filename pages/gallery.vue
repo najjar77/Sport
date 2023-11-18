@@ -1,15 +1,13 @@
 <script setup lang="ts">
 
 import Form from "~/Components/Form.vue";
+import Table from "~/Components/Table.vue";
 </script>
 
 <template>
-<Form/>
-<v-btn
-
->
-  Click me to add something to the Database
-</v-btn>
+  <Form/>
+  <v-divider thickness="5"/>
+  <Table/>
 
 </template>
 
