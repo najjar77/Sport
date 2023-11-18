@@ -1,1 +1,0 @@
-import{_ as r,m as t,I as s,V as c,d as o,q as _,v as e,x as l,J as m,K as d,y as f}from"./entry.29ba8c94.js";const i={};function u(a,n){return t(),s(c)}const p=r(i,[["render",u]]),V=o({__name:"gallery",setup(a){return(n,x)=>(t(),_(d,null,[e(p),e(m,null,{default:l(()=>[f(" Click me to add something to the Database ")]),_:1})],64))}});export{V as default};
