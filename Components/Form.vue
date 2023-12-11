@@ -1,27 +1,23 @@
-<script>
+<script setup lang="ts">
 
-export default {
-  data() {
-    return {
-      name: "",
-      note:"",
-      vslider:"",
-      AmountProtein:"50",
-      AmountBCAA:"0",
-      AmountEAA:"9",
-      AmountCreatin:"7",
-      selectedSportType: [], // Für Mehrfachauswahl, initialisiere mit einem leeren Array
-      selectedSaunaType: [],
-      SportType: ['Gym', 'Running', 'Cycling','Bouldering','HIIT', 'Ruhe Tag'], // Optionen für die Auswahl
-      SaunaType:['Bio Sauna','Finnish Sauna', 'Steam Sauna'],
-      checkboxBCAA: false,
-      checkboxCreatin: false,
-      checkboxEAA: false,
-      checkboxProtein: false,
-      checkboxSauna: false,
-    };
-  }
-};
+const SportType = ['Gym', 'Running', 'Cycling', 'Bouldering', 'HIIT', 'Ruhe Tag'] // Optionen für die Auswahl
+const SaunaType = ['Bio Sauna', 'Finnish Sauna', 'Steam Sauna']
+
+
+const name = ref("")
+const note = ref("")
+const vslider = ref("")
+const AmountProtein = ref("50")
+const AmountBCAA = ref("0")
+const AmountEAA = ref("9")
+const AmountCreatin = ref("7")
+const selectedSportType = ref([]) // Für Mehrfachauswahl, initialisiere mit einem leeren Array
+const selectedSaunaType = ref([])
+const checkboxBCAA = ref(false)
+const checkboxCreatin = ref(false)
+const checkboxEAA = ref(false)
+const checkboxProtein = ref(false)
+const checkboxSauna = ref(false)
 
 </script>
 
@@ -49,7 +45,7 @@ export default {
         ></v-select>
 
         <v-divider :thickness="5"/>
-        <div class="d-flex justify-center" >
+        <div class="d-flex justify-center">
           <v-subheader class="custom-subheader">Sauna</v-subheader>
         </div>
 
@@ -68,10 +64,10 @@ export default {
         </div>
 
         <v-row>
-          <v-col cols="12" sm="3" >
-              <v-checkbox v-model="checkboxBCAA" label="BCAA" />
-              <v-text-field label="BCAA gr." v-model="AmountBCAA"/>
-            </v-col>
+          <v-col cols="12" sm="3">
+            <v-checkbox v-model="checkboxBCAA" label="BCAA"/>
+            <v-text-field label="BCAA gr." v-model="AmountBCAA"/>
+          </v-col>
           <v-col cols="12" sm="3">
             <v-checkbox
                 v-model="checkboxCreatin"
@@ -108,13 +104,13 @@ export default {
         />
 
         <v-slider
-          v-model="vslider"
-          label="How was it?"
-          :min="0"
-          :max="10"
-          :step="0.25"
-          color="orange"
-          thumb-label
+            v-model="vslider"
+            label="How was it?"
+            :min="0"
+            :max="10"
+            :step="0.25"
+            color="orange"
+            thumb-label
         />
 
         <v-btn prepend-icon="mdi-content-save-outline" type="submit" block
@@ -125,7 +121,6 @@ export default {
         </v-btn>
       </v-form>
     </v-sheet>
-
 
 
   </div>
@@ -139,7 +134,8 @@ export default {
   font-size: 18px;
   font-weight: bold;
 }
-.DividerStyle{
+
+.DividerStyle {
   height: 15px;
   color: #fe6847;
 }
