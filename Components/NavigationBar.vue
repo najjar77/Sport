@@ -45,7 +45,7 @@ const navigate = async (path: string) => {
 <style scoped>
 
 .NavigationBarStyle{
-  background-color: #8ECAE6;
+  background-color: #269ae0;
 }
 
 </style>

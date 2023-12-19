@@ -15,10 +15,10 @@ function toggleFormVisible() {
 </script>
 
 <template>
-  <Form v-if="isFormVisible"/>
+  <Form :toggleFormVisible="toggleFormVisible" v-if="isFormVisible"/>
 
-  <v-btn prepend-icon="mdi-plus-circle" block rounded="xl" @click="toggleFormVisible"> Add Entry</v-btn>
-  <v-divider thickness="15"/>
+  <v-btn prepend-icon="mdi-plus-circle" block rounded="xl" @click="toggleFormVisible" v-if="!isFormVisible"> Add Entry</v-btn>
+
   <Table v-if="!isFormVisible"/>
 
 </template>

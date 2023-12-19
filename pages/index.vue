@@ -22,7 +22,7 @@ const cardTitles = ref(["Home", "Gallery", "Account", "Settings"]);
   </v-container>
   <!-- statistic-cards -->
   <v-container>
-    <v-divider></v-divider>
+
   </v-container>
 
 

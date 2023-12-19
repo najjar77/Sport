@@ -24,6 +24,10 @@ const checkboxLionsMain=ref(false)
 const checkboxMultiVit=ref(false)
 const checkboxMagesium=ref(false)
 
+const props = defineProps({
+  toggleFormVisible: Function
+});
+
 
 </script>
 
@@ -32,15 +36,16 @@ const checkboxMagesium=ref(false)
     <v-sheet>
       <v-form fast-fail @submit.prevent>
 
+
+        <v-btn prepend-icon="mdi-chevron-left" @click="props.toggleFormVisible" rounded>cancel</v-btn>
         <div class="d-flex justify-center">
           <v-subheader class="custom-subheader">Trainings data</v-subheader>
         </div>
-
-        <v-text-field
-            v-model="name"
-            label="Name"
-
-        />
+        <v-row>
+          <v-col cols="1" sm="6">
+            <v-text-field v-model="name" label="Name"/>
+          </v-col>
+          <v-col cols="1" sm="6">
         <v-select
             v-model="selectedSportType"
             :items="SportType"
@@ -49,7 +54,11 @@ const checkboxMagesium=ref(false)
             :multiple="true"
             required
         ></v-select>
-
+          </v-col>
+          <v-col cols="2" sm="3">
+        <v-date-picker></v-date-picker>
+          </v-col>
+        </v-row>
         <v-divider :thickness="5"/>
         <div class="d-flex justify-center">
           <v-subheader class="custom-subheader">Sauna</v-subheader>
@@ -103,13 +112,13 @@ const checkboxMagesium=ref(false)
         </div>
         <v-row>
           <v-col cols="1" sm="3">
-            <v-checkbox v-model="checkboxVitD" label="D3"/>
+            <v-checkbox v-model="checkboxVitD" label="Vitamin D3"/>
           </v-col>
           <v-col cols="1" sm="3">
             <v-checkbox v-model="checkboxZinc" label="Zinc"/>
           </v-col>
           <v-col cols="1" sm="3">
-            <v-checkbox v-model="checkboxMultiVit" label="MultiVit"/>
+            <v-checkbox v-model="checkboxMultiVit" label="Multi Vitamin"/>
           </v-col>
           <v-col cols="1" sm="3">
             <v-checkbox v-model="checkboxMagesium" label="Magnesium"/>
@@ -165,7 +174,7 @@ const checkboxMagesium=ref(false)
 
 .DividerStyle {
   height: 15px;
-  color: #fe6847;
+  color: #942108;
 }
 
 .v-sheet {
