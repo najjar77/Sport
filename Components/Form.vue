@@ -18,6 +18,12 @@ const checkboxCreatin = ref(false)
 const checkboxEAA = ref(false)
 const checkboxProtein = ref(false)
 const checkboxSauna = ref(false)
+const checkboxVitD =ref(false)
+const checkboxZinc=ref(false)
+const checkboxLionsMain=ref(false)
+const checkboxMultiVit=ref(false)
+const checkboxMagesium=ref(false)
+
 
 </script>
 
@@ -64,11 +70,11 @@ const checkboxSauna = ref(false)
         </div>
 
         <v-row>
-          <v-col cols="12" sm="3">
+          <v-col cols="1" sm="3">
             <v-checkbox v-model="checkboxBCAA" label="BCAA"/>
             <v-text-field label="BCAA gr." v-model="AmountBCAA"/>
           </v-col>
-          <v-col cols="12" sm="3">
+          <v-col cols="1" sm="3">
             <v-checkbox
                 v-model="checkboxCreatin"
                 label="Creatin"
@@ -88,6 +94,28 @@ const checkboxSauna = ref(false)
                 label="Protein"
             />
             <v-text-field label="Protein gr." v-model="AmountProtein"/>
+          </v-col>
+        </v-row>
+        <v-divider :thickness="5"/>
+        <div class="d-flex justify-center">
+
+          <v-subheader class="custom-subheader">Vitamins</v-subheader>
+        </div>
+        <v-row>
+          <v-col cols="1" sm="3">
+            <v-checkbox v-model="checkboxVitD" label="D3"/>
+          </v-col>
+          <v-col cols="1" sm="3">
+            <v-checkbox v-model="checkboxZinc" label="Zinc"/>
+          </v-col>
+          <v-col cols="1" sm="3">
+            <v-checkbox v-model="checkboxMultiVit" label="MultiVit"/>
+          </v-col>
+          <v-col cols="1" sm="3">
+            <v-checkbox v-model="checkboxMagesium" label="Magnesium"/>
+          </v-col>
+          <v-col cols="1" sm="3">
+            <v-checkbox v-model="checkboxLionsMain" label="Lions Main"/>
           </v-col>
         </v-row>
 
