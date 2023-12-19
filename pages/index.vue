@@ -5,6 +5,7 @@ const cardTitles = ref(["Home", "Gallery", "Account", "Settings"]);
 </script>
 
 <template>
+  <link rel="icon" type="image/png" href="/resources/favicon_sport.png">
   <!-- <starting-Navigation-Cards/> -->
   <v-container class=content-centered>
     <v-row>
